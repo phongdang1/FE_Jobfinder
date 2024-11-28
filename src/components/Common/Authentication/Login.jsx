@@ -183,7 +183,7 @@ const Login = () => {
   // Function to handle Google login using the googleLogin thunk
   const handleGoogleLogin = async () => {
     // Dispatch Google login action
-    window.location.href = "http://localhost:5000/auth/google";
+    window.location.href = "https://be-jobfinder.onrender.com/auth/google";
   };
 
   //Validation

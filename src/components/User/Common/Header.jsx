@@ -105,7 +105,7 @@ function Header() {
   const [notifications, setNotifications] = useState([]); // Danh sách thông báo
   const [showNotifications, setShowNotifications] = useState(false);
   // socket io
-  const socket = io("http://localhost:5000", {
+  const socket = io("https://be-jobfinder.onrender.com", {
     transports: ["websocket"],
     query: {
       userId: userId,

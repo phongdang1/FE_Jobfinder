@@ -72,7 +72,7 @@ function PersonalInformation() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/getUserById?id=${userId}`,
+        `https://be-jobfinder.onrender.com/getUserById?id=${userId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -125,7 +125,7 @@ function PersonalInformation() {
     if (Object.keys(validationErrors).length === 0) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/setDataUserDetail",
+          "https://be-jobfinder.onrender.com/setDataUserDetail",
           {
             userId: userId,
             firstName: inputValue.firstName,
